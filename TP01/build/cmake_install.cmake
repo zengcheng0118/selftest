@@ -1,4 +1,4 @@
-# Install script for directory: D:/ZengCheng/_WorkSpace_/TP01
+# Install script for directory: D:/ZengCheng/_WorkSpace_/selftest/TP01
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/ZengCheng/_WorkSpace_/TP01/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/ZengCheng/_WorkSpace_/selftest/TP01/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
