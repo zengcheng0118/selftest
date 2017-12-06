@@ -91,6 +91,7 @@ a_EXTERNAL_OBJECTS =
 
 a.exe: CMakeFiles/a.dir/test.cpp.obj
 a.exe: CMakeFiles/a.dir/build.make
+a.exe: lib/libmysqrt.a
 a.exe: CMakeFiles/a.dir/linklibs.rsp
 a.exe: CMakeFiles/a.dir/objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:/ZengCheng/_WorkSpace_/selftest/TP01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable a.exe"

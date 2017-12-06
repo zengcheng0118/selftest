@@ -123,6 +123,19 @@ a/fast:
 	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/build
 .PHONY : a/fast
 
+#=============================================================================
+# Target rules for targets named mysqrt
+
+# Build rule for target.
+mysqrt: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mysqrt
+.PHONY : mysqrt
+
+# fast build rule for target.
+mysqrt/fast:
+	$(MAKE) -f lib/CMakeFiles/mysqrt.dir/build.make lib/CMakeFiles/mysqrt.dir/build
+.PHONY : mysqrt/fast
+
 test.obj: test.cpp.obj
 
 .PHONY : test.obj
@@ -159,6 +172,7 @@ help:
 	@echo "... a"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... mysqrt"
 	@echo "... test.obj"
 	@echo "... test.i"
 	@echo "... test.s"
