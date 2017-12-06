@@ -23,7 +23,15 @@ configure_file(
 
 set(SRC_LIST test.cpp)
 
+#add header files'dir
 include_directories("${PROJECT_BINARY_DIR}")
+include_directories("${PROJECT_SOURCE_DIR}/include")
+
+#为构建添加一个子路径
+add_subdirectory(lib)
 
 #add the executablemake
 add_executable(a ${SRC_LIST})
+
+#link lib
+target_link_libraries(a mysqrt)

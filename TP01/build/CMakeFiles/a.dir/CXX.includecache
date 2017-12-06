@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
+../include/sqrt.h
+
 D:/ZengCheng/_WorkSpace_/selftest/TP01/test.cpp
 iostream
 -
+stdlib.h
+-
+math.h
+-
 test.h
 D:/ZengCheng/_WorkSpace_/selftest/TP01/test.h
+sqrt.h
+D:/ZengCheng/_WorkSpace_/selftest/TP01/sqrt.h
 
 test.h
 

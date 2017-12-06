@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "TP01"
+		},
+		{
+			"path": "gtest-1.7.0"
 		}
 	],
 	"settings": {}

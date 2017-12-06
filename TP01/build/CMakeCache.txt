@@ -216,6 +216,15 @@ GetingStart_BINARY_DIR:STATIC=D:/ZengCheng/_WorkSpace_/selftest/TP01/build
 //Value Computed by CMake
 GetingStart_SOURCE_DIR:STATIC=D:/ZengCheng/_WorkSpace_/selftest/TP01
 
+//Dependencies for target
+SQRTFUNC_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+lib_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+mysqrt_LIB_DEPENDS:STATIC=
+
 
 ########################
 # INTERNAL cache entries

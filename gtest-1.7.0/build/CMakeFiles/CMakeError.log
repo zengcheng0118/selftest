@@ -1,0 +1,19 @@
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: D:/ZengCheng/_WorkSpace_/selftest/gtest-1.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/make.exe" "cmTC_db3f8/fast"
+C:/MinGW/bin/make.exe -f CMakeFiles/cmTC_db3f8.dir/build.make CMakeFiles/cmTC_db3f8.dir/build
+make.exe[1]: Entering directory 'D:/ZengCheng/_WorkSpace_/selftest/gtest-1.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_db3f8.dir/CheckIncludeFile.c.obj
+C:/MinGW/bin/gcc.exe    -o CMakeFiles/cmTC_db3f8.dir/CheckIncludeFile.c.obj   -c D:/ZengCheng/_WorkSpace_/selftest/gtest-1.7.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+D:/ZengCheng/_WorkSpace_/selftest/gtest-1.7.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles/cmTC_db3f8.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_db3f8.dir/CheckIncludeFile.c.obj' failed
+make.exe[1]: *** [CMakeFiles/cmTC_db3f8.dir/CheckIncludeFile.c.obj] Error 1
+make.exe[1]: Leaving directory 'D:/ZengCheng/_WorkSpace_/selftest/gtest-1.7.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_db3f8/fast' failed
+make.exe: *** [cmTC_db3f8/fast] Error 2
+
+
