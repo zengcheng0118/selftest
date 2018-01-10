@@ -35,14 +35,17 @@ include_directories("${PROJECT_BINARY_DIR}")
 if (USE_MYMATH)
     #add header files'dir
     include_directories ("${PROJECT_SOURCE_DIR}/include")
-    #为构建添加一个子路径  
+
+    #指定一个编译输出位置，用于存放add_library生成的lib文件
     add_subdirectory (lib)
+
     set (EXTRA_LIBS ${EXTRA_LIBS} mylib)
+    link_libraries(${EXTRA_LIBS})
 endif (USE_MYMATH)
  
 #add the executablemake
 add_executable(${PROJECT_NAME} ${SRC_LIST})
 
 #link lib
-target_link_libraries(${PROJECT_NAME} ${EXTRA_LIBS} ${PROJECT_SOURCE_DIR}/lib/libgmock.a ${PROJECT_SOURCE_DIR}/lib/libgtest.a)
+target_link_libraries(${PROJECT_NAME}  ${PROJECT_SOURCE_DIR}/lib/libgmock.a ${PROJECT_SOURCE_DIR}/lib/libgtest.a)
 #target_link_libraries(${PROJECT_NAME} ${EXTRA_LIBS})
