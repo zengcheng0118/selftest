@@ -1,1 +1,1 @@
-add_library(mysqrt sqrt.cpp)
+add_library(mylib sqrt.cpp libgmock.a libgtest.a)

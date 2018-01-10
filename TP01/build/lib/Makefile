@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = D:/ZengCheng/_WorkSpace_/selftest/TP01/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	D:/ZengCheng/ProgramFiles/CMake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	D:/ZengCheng/ProgramFiles/CMake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,19 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-lib/CMakeFiles/mysqrt.dir/rule:
-	cd D:/ZengCheng/_WorkSpace_/selftest/TP01/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/mysqrt.dir/rule
-.PHONY : lib/CMakeFiles/mysqrt.dir/rule
+lib/CMakeFiles/mylib.dir/rule:
+	cd D:/ZengCheng/_WorkSpace_/selftest/TP01/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/mylib.dir/rule
+.PHONY : lib/CMakeFiles/mylib.dir/rule
 
 # Convenience name for target.
-mysqrt: lib/CMakeFiles/mysqrt.dir/rule
+mylib: lib/CMakeFiles/mylib.dir/rule
 
-.PHONY : mysqrt
+.PHONY : mylib
 
 # fast build rule for target.
-mysqrt/fast:
-	cd D:/ZengCheng/_WorkSpace_/selftest/TP01/build && $(MAKE) -f lib/CMakeFiles/mysqrt.dir/build.make lib/CMakeFiles/mysqrt.dir/build
-.PHONY : mysqrt/fast
+mylib/fast:
+	cd D:/ZengCheng/_WorkSpace_/selftest/TP01/build && $(MAKE) -f lib/CMakeFiles/mylib.dir/build.make lib/CMakeFiles/mylib.dir/build
+.PHONY : mylib/fast
 
 sqrt.obj: sqrt.cpp.obj
 
@@ -131,7 +131,7 @@ sqrt.obj: sqrt.cpp.obj
 
 # target to build an object file
 sqrt.cpp.obj:
-	cd D:/ZengCheng/_WorkSpace_/selftest/TP01/build && $(MAKE) -f lib/CMakeFiles/mysqrt.dir/build.make lib/CMakeFiles/mysqrt.dir/sqrt.cpp.obj
+	cd D:/ZengCheng/_WorkSpace_/selftest/TP01/build && $(MAKE) -f lib/CMakeFiles/mylib.dir/build.make lib/CMakeFiles/mylib.dir/sqrt.cpp.obj
 .PHONY : sqrt.cpp.obj
 
 sqrt.i: sqrt.cpp.i
@@ -140,7 +140,7 @@ sqrt.i: sqrt.cpp.i
 
 # target to preprocess a source file
 sqrt.cpp.i:
-	cd D:/ZengCheng/_WorkSpace_/selftest/TP01/build && $(MAKE) -f lib/CMakeFiles/mysqrt.dir/build.make lib/CMakeFiles/mysqrt.dir/sqrt.cpp.i
+	cd D:/ZengCheng/_WorkSpace_/selftest/TP01/build && $(MAKE) -f lib/CMakeFiles/mylib.dir/build.make lib/CMakeFiles/mylib.dir/sqrt.cpp.i
 .PHONY : sqrt.cpp.i
 
 sqrt.s: sqrt.cpp.s
@@ -149,7 +149,7 @@ sqrt.s: sqrt.cpp.s
 
 # target to generate assembly for a file
 sqrt.cpp.s:
-	cd D:/ZengCheng/_WorkSpace_/selftest/TP01/build && $(MAKE) -f lib/CMakeFiles/mysqrt.dir/build.make lib/CMakeFiles/mysqrt.dir/sqrt.cpp.s
+	cd D:/ZengCheng/_WorkSpace_/selftest/TP01/build && $(MAKE) -f lib/CMakeFiles/mylib.dir/build.make lib/CMakeFiles/mylib.dir/sqrt.cpp.s
 .PHONY : sqrt.cpp.s
 
 # Help Target
@@ -158,9 +158,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... mysqrt"
+	@echo "... mylib"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
 	@echo "... sqrt.obj"
 	@echo "... sqrt.i"
 	@echo "... sqrt.s"

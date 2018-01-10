@@ -4,13 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/ZengCheng/_WorkSpace_/selftest/cpp/src/Customer.cpp" "D:/ZengCheng/_WorkSpace_/selftest/cpp/build/CMakeFiles/cpp.dir/src/Customer.cpp.obj"
+  "D:/ZengCheng/_WorkSpace_/selftest/cpp/src/Queue.cpp" "D:/ZengCheng/_WorkSpace_/selftest/cpp/build/CMakeFiles/cpp.dir/src/Queue.cpp.obj"
   "D:/ZengCheng/_WorkSpace_/selftest/cpp/src/main.cpp" "D:/ZengCheng/_WorkSpace_/selftest/cpp/build/CMakeFiles/cpp.dir/src/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/include"
+  "../include"
   )
 
 # Targets to which this target links.

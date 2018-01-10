@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = D:/ZengCheng/_WorkSpace_/selftest/TP01
 CMAKE_BINARY_DIR = D:/ZengCheng/_WorkSpace_/selftest/TP01/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/a.dir
+# Target rules for target CMakeFiles/gtest.dir
 
 # All Build rule for target.
-CMakeFiles/a.dir/all: lib/CMakeFiles/mysqrt.dir/all
-	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/depend
-	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:/ZengCheng/_WorkSpace_/selftest/TP01/build/CMakeFiles --progress-num=1,2 "Built target a"
-.PHONY : CMakeFiles/a.dir/all
+CMakeFiles/gtest.dir/all: lib/CMakeFiles/mylib.dir/all
+	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/depend
+	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:/ZengCheng/_WorkSpace_/selftest/TP01/build/CMakeFiles --progress-num=1,2 "Built target gtest"
+.PHONY : CMakeFiles/gtest.dir/all
 
 # Include target in all.
-all: CMakeFiles/a.dir/all
+all: CMakeFiles/gtest.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/a.dir/rule: cmake_check_build_system
+CMakeFiles/gtest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/ZengCheng/_WorkSpace_/selftest/TP01/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/a.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/ZengCheng/_WorkSpace_/selftest/TP01/build/CMakeFiles 0
-.PHONY : CMakeFiles/a.dir/rule
+.PHONY : CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
-a : CMakeFiles/a.dir/rule
+gtest: CMakeFiles/gtest.dir/rule
 
-.PHONY : a
-
-# clean rule for target.
-CMakeFiles/a.dir/clean:
-	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/clean
-.PHONY : CMakeFiles/a.dir/clean
+.PHONY : gtest
 
 # clean rule for target.
-clean: CMakeFiles/a.dir/clean
+CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/clean
+.PHONY : CMakeFiles/gtest.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/gtest.dir/clean
 
 .PHONY : clean
 
@@ -100,12 +100,12 @@ clean: CMakeFiles/a.dir/clean
 # Directory level rules for directory lib
 
 # Convenience name for "all" pass in the directory.
-lib/all: lib/CMakeFiles/mysqrt.dir/all
+lib/all: lib/CMakeFiles/mylib.dir/all
 
 .PHONY : lib/all
 
 # Convenience name for "clean" pass in the directory.
-lib/clean: lib/CMakeFiles/mysqrt.dir/clean
+lib/clean: lib/CMakeFiles/mylib.dir/clean
 
 .PHONY : lib/clean
 
@@ -115,39 +115,39 @@ lib/preinstall:
 .PHONY : lib/preinstall
 
 #=============================================================================
-# Target rules for target lib/CMakeFiles/mysqrt.dir
+# Target rules for target lib/CMakeFiles/mylib.dir
 
 # All Build rule for target.
-lib/CMakeFiles/mysqrt.dir/all:
-	$(MAKE) -f lib/CMakeFiles/mysqrt.dir/build.make lib/CMakeFiles/mysqrt.dir/depend
-	$(MAKE) -f lib/CMakeFiles/mysqrt.dir/build.make lib/CMakeFiles/mysqrt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:/ZengCheng/_WorkSpace_/selftest/TP01/build/CMakeFiles --progress-num=3,4 "Built target mysqrt"
-.PHONY : lib/CMakeFiles/mysqrt.dir/all
+lib/CMakeFiles/mylib.dir/all:
+	$(MAKE) -f lib/CMakeFiles/mylib.dir/build.make lib/CMakeFiles/mylib.dir/depend
+	$(MAKE) -f lib/CMakeFiles/mylib.dir/build.make lib/CMakeFiles/mylib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:/ZengCheng/_WorkSpace_/selftest/TP01/build/CMakeFiles --progress-num=3,4 "Built target mylib"
+.PHONY : lib/CMakeFiles/mylib.dir/all
 
 # Include target in all.
-all: lib/CMakeFiles/mysqrt.dir/all
+all: lib/CMakeFiles/mylib.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-lib/CMakeFiles/mysqrt.dir/rule: cmake_check_build_system
+lib/CMakeFiles/mylib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/ZengCheng/_WorkSpace_/selftest/TP01/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/mysqrt.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/mylib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/ZengCheng/_WorkSpace_/selftest/TP01/build/CMakeFiles 0
-.PHONY : lib/CMakeFiles/mysqrt.dir/rule
+.PHONY : lib/CMakeFiles/mylib.dir/rule
 
 # Convenience name for target.
-mysqrt: lib/CMakeFiles/mysqrt.dir/rule
+mylib: lib/CMakeFiles/mylib.dir/rule
 
-.PHONY : mysqrt
-
-# clean rule for target.
-lib/CMakeFiles/mysqrt.dir/clean:
-	$(MAKE) -f lib/CMakeFiles/mysqrt.dir/build.make lib/CMakeFiles/mysqrt.dir/clean
-.PHONY : lib/CMakeFiles/mysqrt.dir/clean
+.PHONY : mylib
 
 # clean rule for target.
-clean: lib/CMakeFiles/mysqrt.dir/clean
+lib/CMakeFiles/mylib.dir/clean:
+	$(MAKE) -f lib/CMakeFiles/mylib.dir/build.make lib/CMakeFiles/mylib.dir/clean
+.PHONY : lib/CMakeFiles/mylib.dir/clean
+
+# clean rule for target.
+clean: lib/CMakeFiles/mylib.dir/clean
 
 .PHONY : clean
 

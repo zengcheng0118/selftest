@@ -1,5 +1,6 @@
+#include <math.h>
 
-double test_sqrt(double a)
+double mysqrt(double a)
 {
-    return a;
+    return sqrt(a);
 }

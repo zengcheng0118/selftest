@@ -82,18 +82,72 @@ CMakeFiles/cpp.dir/src/main.cpp.obj.provides: CMakeFiles/cpp.dir/src/main.cpp.ob
 CMakeFiles/cpp.dir/src/main.cpp.obj.provides.build: CMakeFiles/cpp.dir/src/main.cpp.obj
 
 
+CMakeFiles/cpp.dir/src/Customer.cpp.obj: CMakeFiles/cpp.dir/flags.make
+CMakeFiles/cpp.dir/src/Customer.cpp.obj: CMakeFiles/cpp.dir/includes_CXX.rsp
+CMakeFiles/cpp.dir/src/Customer.cpp.obj: ../src/Customer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/ZengCheng/_WorkSpace_/selftest/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp.dir/src/Customer.cpp.obj"
+	c:/MinGW/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp.dir/src/Customer.cpp.obj -c D:/ZengCheng/_WorkSpace_/selftest/cpp/src/Customer.cpp
+
+CMakeFiles/cpp.dir/src/Customer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp.dir/src/Customer.cpp.i"
+	c:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/ZengCheng/_WorkSpace_/selftest/cpp/src/Customer.cpp > CMakeFiles/cpp.dir/src/Customer.cpp.i
+
+CMakeFiles/cpp.dir/src/Customer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp.dir/src/Customer.cpp.s"
+	c:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/ZengCheng/_WorkSpace_/selftest/cpp/src/Customer.cpp -o CMakeFiles/cpp.dir/src/Customer.cpp.s
+
+CMakeFiles/cpp.dir/src/Customer.cpp.obj.requires:
+
+.PHONY : CMakeFiles/cpp.dir/src/Customer.cpp.obj.requires
+
+CMakeFiles/cpp.dir/src/Customer.cpp.obj.provides: CMakeFiles/cpp.dir/src/Customer.cpp.obj.requires
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/src/Customer.cpp.obj.provides.build
+.PHONY : CMakeFiles/cpp.dir/src/Customer.cpp.obj.provides
+
+CMakeFiles/cpp.dir/src/Customer.cpp.obj.provides.build: CMakeFiles/cpp.dir/src/Customer.cpp.obj
+
+
+CMakeFiles/cpp.dir/src/Queue.cpp.obj: CMakeFiles/cpp.dir/flags.make
+CMakeFiles/cpp.dir/src/Queue.cpp.obj: CMakeFiles/cpp.dir/includes_CXX.rsp
+CMakeFiles/cpp.dir/src/Queue.cpp.obj: ../src/Queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/ZengCheng/_WorkSpace_/selftest/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cpp.dir/src/Queue.cpp.obj"
+	c:/MinGW/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp.dir/src/Queue.cpp.obj -c D:/ZengCheng/_WorkSpace_/selftest/cpp/src/Queue.cpp
+
+CMakeFiles/cpp.dir/src/Queue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp.dir/src/Queue.cpp.i"
+	c:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/ZengCheng/_WorkSpace_/selftest/cpp/src/Queue.cpp > CMakeFiles/cpp.dir/src/Queue.cpp.i
+
+CMakeFiles/cpp.dir/src/Queue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp.dir/src/Queue.cpp.s"
+	c:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/ZengCheng/_WorkSpace_/selftest/cpp/src/Queue.cpp -o CMakeFiles/cpp.dir/src/Queue.cpp.s
+
+CMakeFiles/cpp.dir/src/Queue.cpp.obj.requires:
+
+.PHONY : CMakeFiles/cpp.dir/src/Queue.cpp.obj.requires
+
+CMakeFiles/cpp.dir/src/Queue.cpp.obj.provides: CMakeFiles/cpp.dir/src/Queue.cpp.obj.requires
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/src/Queue.cpp.obj.provides.build
+.PHONY : CMakeFiles/cpp.dir/src/Queue.cpp.obj.provides
+
+CMakeFiles/cpp.dir/src/Queue.cpp.obj.provides.build: CMakeFiles/cpp.dir/src/Queue.cpp.obj
+
+
 # Object files for target cpp
 cpp_OBJECTS = \
-"CMakeFiles/cpp.dir/src/main.cpp.obj"
+"CMakeFiles/cpp.dir/src/main.cpp.obj" \
+"CMakeFiles/cpp.dir/src/Customer.cpp.obj" \
+"CMakeFiles/cpp.dir/src/Queue.cpp.obj"
 
 # External object files for target cpp
 cpp_EXTERNAL_OBJECTS =
 
 cpp.exe: CMakeFiles/cpp.dir/src/main.cpp.obj
+cpp.exe: CMakeFiles/cpp.dir/src/Customer.cpp.obj
+cpp.exe: CMakeFiles/cpp.dir/src/Queue.cpp.obj
 cpp.exe: CMakeFiles/cpp.dir/build.make
 cpp.exe: CMakeFiles/cpp.dir/linklibs.rsp
 cpp.exe: CMakeFiles/cpp.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:/ZengCheng/_WorkSpace_/selftest/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cpp.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:/ZengCheng/_WorkSpace_/selftest/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable cpp.exe"
 	D:/ZengCheng/ProgramFiles/CMake/bin/cmake.exe -E remove -f CMakeFiles/cpp.dir/objects.a
 	C:/MinGW/bin/ar.exe cr CMakeFiles/cpp.dir/objects.a @CMakeFiles/cpp.dir/objects1.rsp
 	c:/MinGW/bin/g++.exe    -Wl,--whole-archive CMakeFiles/cpp.dir/objects.a -Wl,--no-whole-archive  -o cpp.exe -Wl,--out-implib,libcpp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cpp.dir/linklibs.rsp
@@ -104,6 +158,8 @@ CMakeFiles/cpp.dir/build: cpp.exe
 .PHONY : CMakeFiles/cpp.dir/build
 
 CMakeFiles/cpp.dir/requires: CMakeFiles/cpp.dir/src/main.cpp.obj.requires
+CMakeFiles/cpp.dir/requires: CMakeFiles/cpp.dir/src/Customer.cpp.obj.requires
+CMakeFiles/cpp.dir/requires: CMakeFiles/cpp.dir/src/Queue.cpp.obj.requires
 
 .PHONY : CMakeFiles/cpp.dir/requires
 

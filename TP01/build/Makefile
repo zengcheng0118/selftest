@@ -111,30 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named a
+# Target rules for targets named gtest
 
 # Build rule for target.
-a : cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 a
-.PHONY : a
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
 
 # fast build rule for target.
-a/fast:
-	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/build
-.PHONY : a/fast
+gtest/fast:
+	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named mysqrt
+# Target rules for targets named mylib
 
 # Build rule for target.
-mysqrt: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mysqrt
-.PHONY : mysqrt
+mylib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mylib
+.PHONY : mylib
 
 # fast build rule for target.
-mysqrt/fast:
-	$(MAKE) -f lib/CMakeFiles/mysqrt.dir/build.make lib/CMakeFiles/mysqrt.dir/build
-.PHONY : mysqrt/fast
+mylib/fast:
+	$(MAKE) -f lib/CMakeFiles/mylib.dir/build.make lib/CMakeFiles/mylib.dir/build
+.PHONY : mylib/fast
 
 test.obj: test.cpp.obj
 
@@ -142,7 +142,7 @@ test.obj: test.cpp.obj
 
 # target to build an object file
 test.cpp.obj:
-	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/test.cpp.obj
+	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/test.cpp.obj
 .PHONY : test.cpp.obj
 
 test.i: test.cpp.i
@@ -151,7 +151,7 @@ test.i: test.cpp.i
 
 # target to preprocess a source file
 test.cpp.i:
-	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/test.cpp.i
+	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/test.cpp.i
 .PHONY : test.cpp.i
 
 test.s: test.cpp.s
@@ -160,7 +160,7 @@ test.s: test.cpp.s
 
 # target to generate assembly for a file
 test.cpp.s:
-	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/test.cpp.s
+	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/test.cpp.s
 .PHONY : test.cpp.s
 
 # Help Target
@@ -169,10 +169,10 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... a"
+	@echo "... gtest"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... mysqrt"
+	@echo "... mylib"
 	@echo "... test.obj"
 	@echo "... test.i"
 	@echo "... test.s"

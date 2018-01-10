@@ -1,2 +1,2 @@
 
-extern double test_sqrt(double a);
+extern double mysqrt(double a);

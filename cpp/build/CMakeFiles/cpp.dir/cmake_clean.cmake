@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cpp.dir/src/main.cpp.obj"
+  "CMakeFiles/cpp.dir/src/Customer.cpp.obj"
+  "CMakeFiles/cpp.dir/src/Queue.cpp.obj"
   "cpp.pdb"
   "cpp.exe"
   "cpp.exe.manifest"

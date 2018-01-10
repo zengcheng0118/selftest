@@ -1,5 +1,8 @@
 cmake_minimum_required (VERSION 2.6)
-project(GetingStart)
+project(gtest)
+
+option (USE_MYMATH 
+        "Use tutorial provided math implementation" ON) 
 
 #The Version info
 set(Tutorial_VERSION_MAJOR 1)
@@ -25,13 +28,21 @@ set(SRC_LIST test.cpp)
 
 #add header files'dir
 include_directories("${PROJECT_BINARY_DIR}")
-include_directories("${PROJECT_SOURCE_DIR}/include")
 
-#为构建添加一个子路径
-add_subdirectory(lib)
 
+# add the MathFunctions library?
+#
+if (USE_MYMATH)
+    #add header files'dir
+    include_directories ("${PROJECT_SOURCE_DIR}/include")
+    #为构建添加一个子路径  
+    add_subdirectory (lib)
+    set (EXTRA_LIBS ${EXTRA_LIBS} mylib)
+endif (USE_MYMATH)
+ 
 #add the executablemake
-add_executable(a ${SRC_LIST})
+add_executable(${PROJECT_NAME} ${SRC_LIST})
 
 #link lib
-target_link_libraries(a mysqrt)
+target_link_libraries(${PROJECT_NAME} ${EXTRA_LIBS} ${PROJECT_SOURCE_DIR}/lib/libgmock.a ${PROJECT_SOURCE_DIR}/lib/libgtest.a)
+#target_link_libraries(${PROJECT_NAME} ${EXTRA_LIBS})

@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "cpp"
+		},
+		{
+			"path": "gmock-1.7.0-master"
 		}
 	],
 	"settings": {}

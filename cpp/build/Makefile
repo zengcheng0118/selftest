@@ -123,6 +123,60 @@ cpp/fast:
 	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/build
 .PHONY : cpp/fast
 
+src/Customer.obj: src/Customer.cpp.obj
+
+.PHONY : src/Customer.obj
+
+# target to build an object file
+src/Customer.cpp.obj:
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/src/Customer.cpp.obj
+.PHONY : src/Customer.cpp.obj
+
+src/Customer.i: src/Customer.cpp.i
+
+.PHONY : src/Customer.i
+
+# target to preprocess a source file
+src/Customer.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/src/Customer.cpp.i
+.PHONY : src/Customer.cpp.i
+
+src/Customer.s: src/Customer.cpp.s
+
+.PHONY : src/Customer.s
+
+# target to generate assembly for a file
+src/Customer.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/src/Customer.cpp.s
+.PHONY : src/Customer.cpp.s
+
+src/Queue.obj: src/Queue.cpp.obj
+
+.PHONY : src/Queue.obj
+
+# target to build an object file
+src/Queue.cpp.obj:
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/src/Queue.cpp.obj
+.PHONY : src/Queue.cpp.obj
+
+src/Queue.i: src/Queue.cpp.i
+
+.PHONY : src/Queue.i
+
+# target to preprocess a source file
+src/Queue.cpp.i:
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/src/Queue.cpp.i
+.PHONY : src/Queue.cpp.i
+
+src/Queue.s: src/Queue.cpp.s
+
+.PHONY : src/Queue.s
+
+# target to generate assembly for a file
+src/Queue.cpp.s:
+	$(MAKE) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/src/Queue.cpp.s
+.PHONY : src/Queue.cpp.s
+
 src/main.obj: src/main.cpp.obj
 
 .PHONY : src/main.obj
@@ -159,6 +213,12 @@ help:
 	@echo "... cpp"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... src/Customer.obj"
+	@echo "... src/Customer.i"
+	@echo "... src/Customer.s"
+	@echo "... src/Queue.obj"
+	@echo "... src/Queue.i"
+	@echo "... src/Queue.s"
 	@echo "... src/main.obj"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

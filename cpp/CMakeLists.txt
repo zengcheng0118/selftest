@@ -10,8 +10,12 @@ set (CMAKE_CXX_COMPILER ${TOOLCHAIN_DIR}/g++.exe)
 
 add_compile_options (-g)
 
-set (SRC_LIST src/main.cpp)
+set (SRC_LIST 
+src/main.cpp
+src/Customer.cpp
+src/Queue.cpp
+)
 
-include_directories ("${PRJECT_SOURCE_DIR}/include")
+include_directories ("include")
 
 add_executable(cpp ${SRC_LIST})
