@@ -47,5 +47,7 @@ endif (USE_MYMATH)
 add_executable(${PROJECT_NAME} ${SRC_LIST})
 
 #link lib
-target_link_libraries(${PROJECT_NAME}  ${PROJECT_SOURCE_DIR}/lib/libgmock.a ${PROJECT_SOURCE_DIR}/lib/libgtest.a)
+#相对路径实验失败
+#LINK_DIRECTORIES("${PROJECT_SOURCE_DIR}/lib")
+target_link_libraries(${PROJECT_NAME} ${PROJECT_SOURCE_DIR}/lib/libgmock.a ${PROJECT_SOURCE_DIR}/lib/libgtest.a)
 #target_link_libraries(${PROJECT_NAME} ${EXTRA_LIBS})
