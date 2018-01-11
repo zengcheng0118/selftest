@@ -1,0 +1,6 @@
+FAKE(bpf)-> UC: RRCConnectionRequest
+note left: "BB_CCCH",1,"scene.gnbId.cellId.crnti"
+UC -> FAKE(sts):SrbAdmitReques
+note left: "UCS_STS_SRB", 1 , "cpfueid"
+UC <-- FAKE(sts): SrbAdmitResponse
+note right: "UCS_STS_SRB", 2, "cpfueid"

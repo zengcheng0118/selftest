@@ -18,4 +18,4 @@ src/Queue.cpp
 
 include_directories ("include")
 
-add_executable(cpp ${SRC_LIST})
+add_executable(${PROJECT_NAME} ${SRC_LIST})
