@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "gmock-1.7.0-master"
+		},
+		{
+			"path": "Python"
 		}
 	],
 	"settings": {}
