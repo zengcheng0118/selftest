@@ -5,12 +5,12 @@ import re
 
 
 structPat = re.compile(r"""\s*  #匹配空格
-                        (?:     #匹配表达式，但不捕获匹配的文本
+                        (?:     #匹配表达式，但不捕获匹配的文本,即不放到group中
                         typedef
                         \s+
                         )
                         ?
-                        struct
+                        (struct)
                         \s*
                         """, re.X)
 
@@ -35,4 +35,5 @@ arrayPat = re.compile(r"\[(.*?)\]")
 marcoDefPat = re.compile(r"^\s*#define\s+(\w+)\s+(?:\(\w+\))?\s*$")
 
 result = structPat.match("  typedef struct   ")
-print(reuslt)
+print(result)
+print(result.group(1))
