@@ -9,7 +9,7 @@ set(Tutorial_VERSION_MAJOR 1)
 set(Tutorial_VERSION_MINOR 0)
 
 #set compiler
-set(TOOLCHAIN_DIR "C:/MinGW/bin")
+set(TOOLCHAIN_DIR "E:/ProgramFiles/MinGW/bin")
 set(CMAKE_FIND_ROOT_PATH ${TOOLCHAIN_DIR})
 
 set(CMAKE_C_COMPILER ${TOOLCHAIN_DIR}/gcc.exe)
