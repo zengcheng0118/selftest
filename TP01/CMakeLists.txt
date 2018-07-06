@@ -8,14 +8,7 @@ option (USE_MYMATH
 set(Tutorial_VERSION_MAJOR 1)
 set(Tutorial_VERSION_MINOR 0)
 
-#set compiler
-set(TOOLCHAIN_DIR "E:/ProgramFiles/MinGW/bin")
-set(CMAKE_FIND_ROOT_PATH ${TOOLCHAIN_DIR})
-
-set(CMAKE_C_COMPILER ${TOOLCHAIN_DIR}/gcc.exe)
-set(CMAKE_CXX_COMPILER ${TOOLCHAIN_DIR}/g++.exe)
-
-add_compile_options(-g)
+include("../config.cmake")
 
 # configure a header file to pass some of the CMake settings
 # to the source code
