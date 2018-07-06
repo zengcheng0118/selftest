@@ -3,7 +3,7 @@ cmake_minimum_required (VERSION 2.6)
 #project (${PROJECT_NAME})
 project (cpp)
 
-include("config.cmake")
+include("../config.cmake")
 
 set (SRC_LIST 
 src/main.cpp
