@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/TP01/build/gtest.exe",
             "args": [],
-            "stopAtEntry": false,
+            "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": true,
