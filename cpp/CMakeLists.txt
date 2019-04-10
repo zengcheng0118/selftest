@@ -11,6 +11,12 @@ src/Customer.cpp
 src/Queue.cpp
 )
 
-include_directories ("include")
+include_directories (
+    "include"
+    "include/actor"
+    "include/domain"
+    "include/dsl"
+    "include/msg"
+)
 
 add_executable(${PROJECT_NAME} ${SRC_LIST})

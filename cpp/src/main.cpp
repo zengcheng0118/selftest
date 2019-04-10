@@ -1,17 +1,21 @@
 #include <iostream>
 #include <string>
 
+#include "System.h"
+
 using std::string;
 using std::cout;
 using std::endl;
 
 void parsePlantUmlMsg(string s1, string s2);
+void testDsl();
 
 int main(int argc, char** argv)
 {
     using std::cout;
     using std::endl;
 
+    testDsl();
     cout << "just test cpp" << endl;
 
     parsePlantUmlMsg("FAKE(bpf)-> UC: RRCConnectionRequest", "note left: \"BB_CCCH\",1,\"scene.gnbId.cellId.crnti\"");
@@ -90,4 +94,12 @@ void parsePlantUmlMsg(string s1, string s2)
     cout << mf.left.servNode << " "
          << mf.right.servNode << " "
          << mf.msgType << endl;
+}
+
+void testDsl()
+{
+    System sys;
+
+    sys.service<----sys.fake(2, 'b');
+    sys.service---->sys.fake(1, 'c');
 }
